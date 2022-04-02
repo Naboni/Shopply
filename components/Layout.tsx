@@ -114,8 +114,8 @@ export default function Layout({ selectedTab }: { selectedTab: number }) {
           <div key={i}>
             {category.products.map((product: any) => {
               return (
-                <div className={classes.productItem}>
-                  <Card key={i} item={product} />
+                <div className={classes.productItem} key={i}>
+                  <Card item={product} />
                 </div>
               );
             })}
