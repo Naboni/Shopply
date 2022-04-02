@@ -1,0 +1,14 @@
+.search {
+  width: 30%;
+  height: 40px;
+  border-radius: 20px;
+  border: solid var(--light-color) 1px;
+  padding: 0 15px;
+}
+
+.searchWrapper {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

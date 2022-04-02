@@ -1,0 +1,71 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 15px;
+  border-bottom: 3px solid var(--light-color);
+  position: fixed;
+  background-color: white;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  gap: 70px;
+  list-style: none;
+}
+
+.navbar li {
+  color: var(--light-color);
+  font-size: medium;
+}
+
+.navbar li:nth-child(2) {
+  color: black;
+  font-size: large;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li:nth-child(2)::after {
+  content: "";
+  height: 3px;
+  width: 20px;
+  background-color: black;
+  position: absolute;
+  bottom: -5px;
+}
+
+.profileWrapper {
+  display: flex;
+  gap: 15px;
+}
+
+.cartBag {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 0.5px rgb(219, 219, 219);
+}
+
+.profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile img {
+  object-fit: contain;
+  object-position: center;
+}
